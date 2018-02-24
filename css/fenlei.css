@@ -1,0 +1,351 @@
+/*
+* @Author: Administrator
+* @Date:   2018-02-07 20:23:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-02-24 14:58:49
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	/* overflow-x: hidden; */
+	font-family: "苹方"，"San Francisco Display";
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #ffb3c4;
+}
+.topTab{
+	width: 100%;
+	height: 1.04rem;
+	/* background: red; */
+	background: -webkit-linear-gradient(left,#ff3774,#ff379a);
+	position: fixed;
+	/* 固定定位：相对于窗口去定位 */
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.topTab .sousuokuang{
+	position: relative;
+}
+.topTab .sousuokuang .searchBox{
+	width: 5.28rem;
+	height: 0.56rem;
+	background: #fff;
+	border-radius: 1.25rem;
+	border: 0rem solid #fff;
+	margin-left: 1.11rem;
+	margin-top: 0.24rem;
+	padding-left: 0.63rem;
+	box-sizing: border-box;
+	/* 当加了padding值后，盒子大小不变 */
+	font-size: 0.24rem;
+	font-family: "苹方";
+	text-align: center;
+	color: #ffb3c4;
+	float: left;
+}
+.topTab .sousuokuang .sousuo{
+	width: 0.62rem;
+	height: 0.56rem;
+	/* background: green; */
+	position: absolute;
+	top: 0.26rem;
+	left: 2.38rem;
+	background-image: url('../img/sousuo.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	float: left;
+}
+.topTab .xiaoxi{
+	width: 0.62rem;
+	height: 0.56rem;
+	/* background: green; */
+	position: absolute;
+	top: 0.25rem;
+	right: 0.2rem;
+	background-image: url('../img/xiaoxi.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	float: left;
+}
+.topTab .paizhao{
+	width: 0.62rem;
+	height: 0.56rem;
+	/* background: green; */
+	position: absolute;
+	top: 0.25rem;
+	left: 0.2rem;
+	background-image: url('../img/photo.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	float: left;
+}
+.shejishi{
+	width: 7.02rem;
+	height: 17.12rem;
+	/* background: blue; */
+	position: relative;
+	top: 1.3rem;
+	left: 0.24rem;
+	margin-bottom: 1.5rem;
+}
+.shejishi .left{
+	width: 3.39rem;
+	height: 17.12rem;
+	/* background: blue; */
+	float: left;
+}
+.shejishi .right{
+	width: 3.39rem;
+	height: 17.12rem;
+	/* background: pink; */
+	float: right;
+}
+.shejishi .left .list{
+	width: 3.39rem;
+	height: 4.1rem;
+	background: #fff;
+	float: left;
+	margin-bottom: 0.24rem;
+	box-shadow: 0rem 0rem 0.1rem 0.04rem #ffebf0; 
+}
+.shejishi .right .list{
+	width: 3.39rem;
+	height: 4.1rem;
+	background: #fff;
+	float: left;
+	margin-bottom: 0.24rem;
+	box-shadow: 0rem 0rem 0.1rem 0.04rem #ffebf0; 
+}
+.shejishi .left .list .tupian{
+	width: 3.39rem;
+	height: 3.07rem;
+	background: #ccc;
+}
+.shejishi .left .list .tupian img{
+	width: 3.39rem;
+	height: 3.06rem;
+}
+.shejishi .right .list .tupian img{
+	width: 3.39rem;
+	height: 3.06rem;
+}
+.shejishi .left .list .biaoti{
+	width: 100%;
+	height: 0.6rem;
+	/* background: green; */
+	font-size: 0.3rem;
+	font-weight: 800;
+	line-height: 0.6rem;
+	color: #ff3e70;
+	font-family: "San Francisco Display";
+	text-align: center;
+}
+.shejishi .left .list .neirong{
+	width: 100%;
+	height: 0.45rem;
+	/* background: red; */
+	margin-top: -0.1rem;
+}
+.shejishi .left .list .neirong .dianzan{
+	width: 0.42rem;
+	height: 0.45rem;
+	margin-left: 0.15rem;
+	/* background: green; */
+	background-image: url('../img/dianzan.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+	float: left;
+}
+.shejishi .left .list .neirong .renshu{
+	width: 0.68rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	font-weight: 500;
+	line-height: 0.45rem;
+	text-align: center;
+	color: #ffd12f;
+	font-family: "San Francisco Display";
+	float: left;
+}
+.shejishi .left .list .neirong .dingzhi{
+	width: 0.42rem;
+	height: 0.45rem;
+	margin-right: 0.8rem;
+	/* background: green; */
+	background-image: url('../img/dingzhi.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+	float: right;
+}
+.shejishi .left .list .neirong .shuliang{
+	width: 0.68rem;
+	height: 0.45rem;
+	margin-right: -1rem;
+	font-size: 0.2rem;
+	font-weight: 500;
+	line-height: 0.45rem;
+	text-align: center;
+	color: #ffd12f;
+	font-family: "San Francisco Display";
+	float: right;
+}
+.shejishi .right .list .tupian{
+	width: 3.39rem;
+	height: 3.07rem;
+	background: #ccc;
+}
+.shejishi .right .list .biaoti{
+	width: 100%;
+	height: 0.6rem;
+	/* background: green; */
+	font-size: 0.3rem;
+	font-weight: 800;
+	line-height: 0.6rem;
+	color: #ff3e70;
+	font-family: "San Francisco Display";
+	text-align: center;
+}
+.shejishi .right .list .neirong{
+	width: 100%;
+	height: 0.45rem;
+	/* background: red; */
+	margin-top: -0.1rem;
+}
+.shejishi .right .list .neirong .dianzan{
+	width: 0.42rem;
+	height: 0.45rem;
+	margin-left: 0.15rem;
+	/* background: green; */
+	background-image: url('../img/dianzan.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+	float: left;
+}
+.shejishi .right .list .neirong .renshu{
+	width: 0.68rem;
+	height: 0.45rem;
+	font-size: 0.2rem;
+	font-weight: 500;
+	line-height: 0.45rem;
+	text-align: center;
+	color: #ffd12f;
+	font-family: "San Francisco Display";
+	float: left;
+}
+.shejishi .right .list .neirong .dingzhi{
+	width: 0.42rem;
+	height: 0.45rem;
+	margin-right: 0.8rem;
+	/* background: green; */
+	background-image: url('../img/dingzhi.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+	float: right;
+}
+.shejishi .right .list .neirong .shuliang{
+	width: 0.68rem;
+	height: 0.45rem;
+	margin-right: -1rem;
+	font-size: 0.2rem;
+	font-weight: 500;
+	line-height: 0.45rem;
+	text-align: center;
+	color: #ffd12f;
+	font-family: "San Francisco Display";
+	float: right;
+}
+.dibu{
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 0rem 0rem 0.1rem 0.04rem #ffebf0; 
+}
+.dibu .list{
+	width: 1.5rem;
+	height: 0.98rem;
+	/* background: pink; */
+	float: left;
+	box-sizing: border-box;
+}
+.dibu .list3{
+	width: 1.5rem;
+	height: 1.5rem;
+	/* background: pink; */
+	float: left;
+	margin-top: -0.3rem;
+}
+.dibu .list .tubiao{
+	width: 1.5rem;
+	height: 0.52rem;
+	margin-top: 0.1rem;
+}
+.dibu .list .tubiao{
+	background-image: url('../img/shouyeweixuanzhong.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.dibu .list .tubiao2{
+	background-image: url('../img/fenlei-weixuanzhong.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.dibu .list .tubiao3 img{
+	/* background-image: url('../img/dingzhi.png'); */
+	width: 1rem;
+	height: 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 0.28rem;
+	margin-bottom: 0.2rem;
+}
+.dibu .list .tubiao4{
+	background-image: url('../img/gouwuche.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.dibu .list .tubiao5{
+	background-image: url('../img/wode.png');
+	background-size: 1rem 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.dibu .list .wenzi{
+	width: 1.5rem;
+	height: 0.25rem;
+	margin-top: 0.02rem;
+	font-size: 0.24rem;
+	font-weight: 800;
+	font-family: "苹方";
+	line-height: 0.25rem;
+	text-align: center;
+	color: #ff2f62;
+}
+.dibu .list3 .wenzi3{
+	width: 1.5rem;
+	height: 0.25rem;
+	margin-top: -0.53rem;
+	font-size: 0.24rem;
+	font-weight: 800;
+	font-family: "苹方";
+	line-height: 0.25rem;
+	text-align: center;
+	color: #ff2f62;
+}
